@@ -60,7 +60,7 @@ cover/
 local_settings.py
 db.sqlite3
 db.sqlite3-journal
-
+secrets.json
 # Flask stuff:
 instance/
 .webassets-cache
@@ -122,11 +122,14 @@ celerybeat.pid
 # Environments
 .env
 .venv
+.myvenv
 env/
 venv/
+myvenv/
 ENV/
 env.bak/
 venv.bak/
+myvenv.bak/
 
 # Spyder project settings
 .spyderproject

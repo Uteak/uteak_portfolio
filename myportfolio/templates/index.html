@@ -1,0 +1,483 @@
+{% load static %}
+{% load bootstrap4 %}
+{% block content %}
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Agency - Start Bootstrap Theme</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="{% static 'assets/favicon.ico'%}" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top"><img src="{% static "assets/img/navbar-logo.svg" %}" alt="..." /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#services">about me</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">Record</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+                <div class="masthead-subheading">Welcome To Our Studio!</div>
+                <div class="masthead-heading text-uppercase">It's Nice To Meet You</div>
+                <a class="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a>
+            </div>
+        </header>
+        <!-- Services-->
+        <section class="page-section" id="services">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">about me</h2>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <h4 class="my-3">My information</h4>
+                        <p class="text-muted">이름 : 오유택</p>
+                        <p class="text-muted">생년 월일 : 1994.04.26</p>
+                        <p class="text-muted">연락처 : 010 7344 7303</p>
+                        <p class="text-muted">메일 : yroh05@naver.com</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h4 class="my-3">Skill</h4>
+                        <p class="text-muted">Backend : python, django, c#</p>
+                        <p class="text-muted">Frontend : Html, css, javasrcipt</p>
+                        <p class="text-muted">Deployment : Aws, Ncloud, docker</p>
+                        <p class="text-muted">Communication : github, notion</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h4 class="my-3">career</h4>
+                        <p class="text-muted">2022.09 ~ 2023.10 software 개발자 </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Portfolio Grid-->
+        <section class="page-section bg-light" id="portfolio">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Portfolio</h2>
+                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 1-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{% static "assets/img/portfolio/keykey.png" %}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">KeyKey Project</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 2-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{% static "assets/img/portfolio/labelimg.png" %}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Labeling Tool Project</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 3-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{% static "assets/img/header-bg.jpg"%}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">portfolio site</div>
+                            </div>
+                        </div>
+                    </div>
+                    {% comment %} <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                        <!-- Portfolio item 4-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{% static "assets/img/portfolio/4.jpg" %}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Lines</div>
+                                <div class="portfolio-caption-subheading text-muted">Branding</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                        <!-- Portfolio item 5-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{% static "assets/img/portfolio/5.jpg" %}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Southwest</div>
+                                <div class="portfolio-caption-subheading text-muted">Website Design</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <!-- Portfolio item 6-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{% static "assets/img/portfolio/6.jpg" %}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Window</div>
+                                <div class="portfolio-caption-subheading text-muted">Photography</div>
+                            </div>
+                        </div>
+                    </div> {% endcomment %}
+                </div>
+            </div>
+        </section>
+        <!-- About-->
+        <section class="page-section" id="about">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">About</h2>
+                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                </div>
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="{% static "assets/img/about/1.jpg" %}" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>2016-2022</h4>
+                                <h4 class="subheading">대학교 재학</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">통계학을 전공하였으며 python, R 등의 프로그래밍을 활용해 통계 데이터 분석 및 시각화를 하며 코딩에 흥미를 가지게 되었으며 교양 수업으로 HTML, CSS, JS, python 등으 수업을 들으며 개발자로의 진로를 고민하였습니다.</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="{% static "assets/img/about/2.jpg" %}" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>2021.11-2022.06</h4>
+                                <h4 class="subheading">Ai 인공지능 데브코스 과정 수료</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">프로그래머스 에서 진행하는 AI 인공지능 데브코스 과정을 수료하며 강화학습을 통한 동물장기 프로젝트, Gen을 활용한 가나폰트 프로잭트(해커톤 참가) 등을 수행하며 AI 알고리즘과 프로그래밍에 대한 이해를 높였습니다. </p></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="{% static "assets/img/about/3.jpg" %}" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>2022.09 - 2023.10</h4>
+                                <h4 class="subheading">Sosoftware 개발자</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">인공지능 CCTV 영상관제 서비스를 하는 스타트업에서 근무하며 python, c#, wpf등을 활용해 영상 분석 솔루션 기능개발 과 서버간 연동작업을 담당하였고, docker를 활용해 Linux환경에서 서버 배포 및 업데이트등의 작업을 수행하였습니다.</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="{% static "assets/img/about/4.jpg" %}"alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>2023.11-2024.02</h4>
+                                <h4 class="subheading">Django 프로젝트 수행</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">본격적인 백엔드 개발자로써 커리어를 전향하고자 Labeling 프로젝트, keykey 프로젝트등을 수행하며 기능개발, Aws and Ncloud 환경에 배포, 서버 구축 및 업데이트 등의 작업을 수행하였습니다.</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <h4>
+                                Be Part
+                                <br />
+                                Of Our
+                                <br />
+                                Story!
+                            </h4>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+       
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{% static "assets/img/close-icon.svg" alt="Close modal" %}" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">keykey 프로젝트</h2>
+                                    <p class="item-intro text-muted">2024.1.24 ~ 2. (진행중)</p>
+                                    <div style="display: flex; justify-content: center; gap: 20px;">
+                                        <img class="img-fluid d-block mx-auto" src="{% static "assets/img/portfolio/keykey1.png" %}" alt="..." />
+                                        <img class="img-fluid d-block mx-auto" src="{% static "assets/img/portfolio/keykey2.jpg" %}" alt="..."  width="200"/>
+                                        <img class="img-fluid d-block mx-auto" src="{% static "assets/img/portfolio/keykey3.jpg" %}" alt="..."  width="200"/>
+                                        <img class="img-fluid d-block mx-auto" src="{% static "assets/img/portfolio/keykey4.jpg" %}" alt="..."  width="200"/>
+                                        <img class="img-fluid d-block mx-auto" src="{% static "assets/img/portfolio/keykeylogin.jpg" %}" alt="..."  width="200"/>
+                                    </div>
+                                    
+                                    <img class="img-fluid d-block mx-auto" src="{% static "assets/img/portfolio/description.png" %}" alt="Image Description"/>
+
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>API 명세서 :</strong>
+                                            <a href="https://lumbar-front-60a.notion.site/3ad11bef299b49509ea676171d697012?v=6f58d9f4935540a2acd213dc630906fc&pvs=4" target="_blank">API 명세서</a>
+                                        </li>
+                                        <li>
+                                            <strong>프로젝트 홈페이지 :</strong>
+                                            <a href="https://keykey.vercel.app/pages/home" target="_blank">프로젝트 홈페이지</a>
+                                        </li>
+                                        <li>
+                                            <strong>GitHub 저장소 :</strong>
+                                            <a href="https://github.com/kiki-team-project/kiki-project-django" target="_blank">GitHub 저장소</a>
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 2 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{% static "assets/img/close-icon.svg" alt="Close modal" %}" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Labeling Project</h2>
+                                    <p class="item-intro text-muted">이미지/텍스트 데이터를 효율적으로 라벨링할 수 있게 만드는 도구.</p>
+                                    <div style="display: flex; justify-content: center; gap: 20px;">
+                                        <img class="img-fluid" src="{% static "assets/img/portfolio/imageupload.png" %}" alt="Image Description" width="400" />
+                                        <img class="img-fluid" src="{% static "assets/img/portfolio/labelList.png" %}" alt="Image Description" width="400" />
+                                        <img class="img-fluid" src="{% static "assets/img/portfolio/labeling_img.png" %}" alt="Image Description" width="600" />
+                                    </div>
+                                    <p>이미지/텍스트 데이터를 효율적으로 라벨링하여 데이터 분석 및 머신 러닝 모델 훈련을 용이하게 하는 도구 개발.</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>팀 구성: </strong>
+                                            개인
+                                        </li>
+                                        <li>
+                                            <strong>배포 사이트 :</strong>
+                                            <a href="http://43.201.56.141/" target="_blank">프로젝트 URL</a>
+                                        </li>
+                                        <li>
+                                            <strong>(공용)id, pass : </strong>
+                                            uteak05 / uteak1234
+                                        </li>
+                                        <li>
+                                            <strong>깃허브 링크 : </strong>
+                                            <a href="https://github.com/Uteak/Uteak_labelingTool" target="_blank">GitHub 저장소</a>
+                                        </li>
+
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 3 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Project Name</h2>
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/3.jpg" alt="..." />
+                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Finish
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Identity
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 4 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Project Name</h2>
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/4.jpg" alt="..." />
+                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Lines
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Branding
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 5 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Project Name</h2>
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/5.jpg" alt="..." />
+                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Southwest
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Website Design
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 6 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Project Name</h2>
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/6.jpg" alt="..." />
+                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Window
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Photography
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
+{% endblock%}
